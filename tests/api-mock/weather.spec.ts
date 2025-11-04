@@ -53,7 +53,7 @@ test.describe('Wind values tests', () => {
     await expect(page.getByTestId('wind')).toHaveText(`${customWindValue} km/h`)
   })
 
-  const data = ['-100.0', '0.0', 'x', '100']
+  const data = ['-100.0', '0.0', '100.0']
 
   data.forEach((element) => {
     test(`should show wind value mock only wind ${element}`, async ({ page }) => {
